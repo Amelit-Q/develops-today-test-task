@@ -13,7 +13,7 @@ export const fetchPosts = () => {
     } catch (e) {
       dispatch({
         type: PostsActionTypes.FETCH_POSTS_ERROR,
-        payload: "Failed to fetch from server",
+        payload: "Failed to fetch from the server",
       });
     }
   };

@@ -1,9 +1,11 @@
 import { combineReducers } from "redux";
 import { postsReducer } from "./fetchPostsReducer";
 import { HYDRATE } from "next-redux-wrapper";
+import { fullPostReducer } from "./fetchFullPostReducer";
 
 export const rootReducer = combineReducers({
   posts: postsReducer,
+  post: fullPostReducer,
 });
 
 export const reducer = (state, action) => {
